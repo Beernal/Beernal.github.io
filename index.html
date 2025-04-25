@@ -17,7 +17,7 @@
         p.date {
             font-family: 'Merriweather', serif;
         }
-
+		
         h2,
         h3,
         h4,
@@ -55,6 +55,34 @@
             font-size: 1rem;
             margin-bottom: 5px;
         }
+		
+		.language {
+            display: none;
+        }
+        .language.en {
+            display: block;
+        }
+		
+		 .toggle-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #615F6D;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .toggle-button:hover {
+            transform: scale(1.05); /* Efeito de "zoom" */
+        }
+
+        .toggle-button:active {
+            transform: scale(0.98); /* Efeito ao clicar */
+        }
 
         /* Media query for print */
         @media print {
@@ -70,104 +98,238 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="row d-flex px-0 align-items-center justify-content-center container">
-                <div class="col-6">
-                    <h1>Ângelo Bernal Gomes França</h1>
-                </div>
-                <div class="col-6 contact-icons text-end">
-                    <p>Brasília/DF <i class="fas fa-location-dot" aria-label="Ícone de Localização"></i></p>
-                    <p><a href="tel:+5561991564133" aria-label="Telefone">+55 61 99156-4133 <i class="fas fa-phone" aria-label="Ícone de Telefone"></i></a></p>
-                    <p><a href="mailto:angelogomesfranca@gmail.com" aria-label="Email">angelogomesfranca@gmail.com <i class="fas fa-envelope" aria-label="Ícone de Email"></i></a></p>
-                    <p><a href="http://www.linkedin.com/in/angelo-bernal-gomes-franca-9a974a145/" aria-label="Perfil no LinkedIn" target="_blank">linkedin.com/in/angelo-bernal-gomes-franca-9a974a145 <i class="fab fa-linkedin" aria-label="Ícone do LinkedIn"></i></a></p>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="container my-4">
-        <section id="section-summary" class="my-4">
-            <h2 class="d-none">Resumo</h2>
-            <p>Com mais de 3 anos de experiência em desenvolvimento de software, contribuí para projetos complexos, especializando-me em tecnologias Salesforce, como Apex, LWC, SOQL e Flow. Busco realizar tarefas da melhor e mais organizada forma possível e com o propósito mais importante: resolver problemas.</p>
-        </section>
-        <section id="section-objetive" class="my-4">
-            <h2>Objetivo</h2>
-            <p>Trabalhar como Desenvolvedor Salesforce e fazer contribuições significativas para o sucesso da organização, alinhando-me aos seus objetivos estratégicos.</p>
-        </section>
-        <section id="section-experience" class="my-4">
-            <h2>Experiência</h2>
-            <article class="my-4">
-                <h4>Analista Desenvolvedor Salesforce | Everymind</h4>
-                <p class="date">Março 2025 – presente</p>
-                <ul>
-                    <li>Analisar, arquitetar e desenvolver soluções Salesforce em um contexto empresarial, com foco em estratégias de transformação digital, arquitetura de integração e refatoração de código legado.</li>
-                    <li>Estimativa de novos projetos, revisão de código, treinamentos (programa BestMinds) e aprimoramento técnico aplicando design patterns e metodologias ágeis.</li>
-                    <li>Desenvolvimento de novas soluções e melhorias em códigos legados com padrões avançados de design, práticas modernas de desenvolvimento e pensamento crítico para otimizar ciclos de projeto.</li>
-                </ul>
-                <span class="my-4">Tecnologias e habilidades utilizadas: Salesforce (SFDX, Apex, Triggers, Batchable, Queueable, Platform Events, Flows, SOQL, LWC, Aura Components, SLDS), JavaScript (Web Components), HTML, CSS, Jira e Behavior Driven Development (BDD).</span>
-            </article>
-            <article class="my-4">
-                <h4>Analista Desenvolvedor Salesforce | Multiedro</h4>
-                <p class="date">Junho 2023 – Março 2025</p>
-                <ul>
-                    <li>Analisar, desenvolver, revisar código e implementar soluções Salesforce em um contexto empresarial com foco em estratégias de transformação digital e integrações.</li>
-                    <li>Melhorar código legado e desenvolver novas soluções aplicando design patterns e práticas modernas de desenvolvimento.</li>
-                    <li>Estudar e manter-se atualizado com tecnologias avançadas para aumentar a qualidade das soluções e a eficiência dos projetos.</li>
-                </ul>
-                <span class="my-4">Tecnologias e habilidades utilizadas: Salesforce (SFDX, Apex, SOQL, LWC, Aura, SLDS), JavaScript, HTML, CSS, Flow.</span>
-            </article>
-        </section>
-        <section id="section-education" class="my-4">
-            <h2>Formação</h2>
-            <article class="my-4">
-                <h4>Faculdade UNICEUB | UNICEUB-DF</h4>
-                <h5>Graduação, Análise e Desenvolvimento de Sistemas - Incompleta</h5>
-            </article>
-			<h2>Certificações</h2>
-            <article class="my-4">
-                <h5>Salesforce Certified Platform Developer I</h5>
-                <h5>Salesforce Certified Associate</h5>
-				<h5>Scrum Foundation Professional Certificate SFPC</h5>
-            </article>
-        </section>
-        <section id="section-skills" class="my-4">
-            <h2 class="d-none">Habilidades</h2>
-            <article id="soft-skills">
-                <h2>Habilidades Comportamentais</h2>
-                <ul>
-                    <li>Comunicação</li>
-                    <li>Liderança</li>
-                    <li>Trabalho em equipe</li>
-                    <li>Resiliência</li>
-                    <li>Proatividade</li>
-                    <li>Organização</li>
-                </ul>
-            </article>
-            <article id="hard-skills">
-                <h2>Habilidades Técnicas</h2>
-                <ul>
-                    <li>Apex</li>
-                    <li>Padrões de Design Apex</li>
-                    <li>SOQL</li>
-                    <li>Flow</li>
-                    <li>Componentes Lightning Web (LWC)</li>
-                    <li>Visualforce (VF)</li>
-					<li>Service Cloud</li>
-					<li>Sales Cloud</li>
-					<li>Marketing Cloud</li>
-                </ul>
-            </article>
-            <article id="languages">
-                <h2>Idiomas</h2>
-                <ul>
-                    <li>Português: Nativo</li>
-                    <li>Inglês: Intermediário</li>
-                </ul>
-            </article>
-        </section>
-    </main>
-    <footer class="bg-light py-1 d-flex justify-content-center align-items-center">
-        <p>Disponível para iniciar em 30 dias | Modelo de trabalho: remoto</p>
-    </footer>
+	<button class="toggle-button" onclick="toggleLanguage()">Português</button>
+	<div class="language pt">
+		<header>
+			<div class="container">
+				<div class="row d-flex px-0 align-items-center justify-content-center container">
+					<div class="col-6">
+						<h1>Ângelo Bernal Gomes França</h1>
+					</div>
+					<div class="col-6 contact-icons text-end">
+						<p>Brasília/DF <i class="fas fa-location-dot" aria-label="Ícone de Localização"></i></p>
+						<p><a href="tel:+5561991564133" aria-label="Telefone">+55 61 99156-4133 <i class="fas fa-phone" aria-label="Ícone de Telefone"></i></a></p>
+						<p><a href="mailto:angelogomesfranca@gmail.com" aria-label="Email">angelogomesfranca@gmail.com <i class="fas fa-envelope" aria-label="Ícone de Email"></i></a></p>
+						<p><a href="http://www.linkedin.com/in/angelo-bernal-gomes-franca-9a974a145/" aria-label="Perfil no LinkedIn" target="_blank">linkedin.com/in/angelo-bernal-gomes-franca-9a974a145 <i class="fab fa-linkedin" aria-label="Ícone do LinkedIn"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="container my-4">
+			<section id="section-summary" class="my-4">
+				<h2 class="d-none">Resumo</h2>
+				<p>Com mais de 3 anos de experiência em desenvolvimento de software, contribuí para projetos complexos, especializando-me em tecnologias Salesforce, como Apex, LWC, SOQL e Flow. Busco realizar tarefas da melhor e mais organizada forma possível e com o propósito mais importante: resolver problemas.</p>
+			</section>
+			<section id="section-objetive" class="my-4">
+				<h2>Objetivo</h2>
+				<p>Trabalhar como Desenvolvedor Salesforce e fazer contribuições significativas para o sucesso da organização, alinhando-me aos seus objetivos estratégicos.</p>
+			</section>
+			<section id="section-experience" class="my-4">
+				<h2>Experiência</h2>
+				<article class="my-4">
+					<h4>Analista Desenvolvedor Salesforce | Everymind</h4>
+					<p class="date">Março 2025 – presente</p>
+					<ul>
+						<li>Analisar, arquitetar e desenvolver soluções Salesforce em um contexto empresarial, com foco em estratégias de transformação digital, arquitetura de integração e refatoração de código legado.</li>
+						<li>Estimativa de novos projetos, revisão de código, treinamentos (programa BestMinds) e aprimoramento técnico aplicando design patterns e metodologias ágeis.</li>
+						<li>Desenvolvimento de novas soluções e melhorias em códigos legados com padrões avançados de design, práticas modernas de desenvolvimento e pensamento crítico para otimizar ciclos de projeto.</li>
+					</ul>
+					<span class="my-4">Tecnologias e habilidades utilizadas: Salesforce (SFDX, Apex, Triggers, Batchable, Queueable, Platform Events, Flows, SOQL, LWC, Aura Components, SLDS), JavaScript (Web Components), HTML, CSS, Jira e Behavior Driven Development (BDD).</span>
+				</article>
+				<article class="my-4">
+					<h4>Analista Desenvolvedor Salesforce | Multiedro</h4>
+					<p class="date">Junho 2023 – Março 2025</p>
+					<ul>
+						<li>Analisar, desenvolver, revisar código e implementar soluções Salesforce em um contexto empresarial com foco em estratégias de transformação digital e integrações.</li>
+						<li>Melhorar código legado e desenvolver novas soluções aplicando design patterns e práticas modernas de desenvolvimento.</li>
+						<li>Estudar e manter-se atualizado com tecnologias avançadas para aumentar a qualidade das soluções e a eficiência dos projetos.</li>
+					</ul>
+					<span class="my-4">Tecnologias e habilidades utilizadas: Salesforce (SFDX, Apex, SOQL, LWC, Aura, SLDS), JavaScript, HTML, CSS, Flow.</span>
+				</article>
+			</section>
+			<section id="section-education" class="my-4">
+				<h2>Formação</h2>
+				<article class="my-4">
+					<h4>Faculdade UNICEUB | UNICEUB-DF</h4>
+					<h5>Graduação, Análise e Desenvolvimento de Sistemas - Incompleta</h5>
+				</article>
+				<h2>Certificações</h2>
+				<article class="my-4">
+					<h5>Salesforce Certified Platform Developer I</h5>
+					<h5>Salesforce Certified Associate</h5>
+					<h5>Scrum Foundation Professional Certificate SFPC</h5>
+				</article>
+			</section>
+			<section id="section-skills" class="my-4">
+				<h2 class="d-none">Habilidades</h2>
+				<article id="soft-skills">
+					<h2>Habilidades Comportamentais</h2>
+					<ul>
+						<li>Comunicação</li>
+						<li>Liderança</li>
+						<li>Trabalho em equipe</li>
+						<li>Resiliência</li>
+						<li>Proatividade</li>
+						<li>Organização</li>
+					</ul>
+				</article>
+				<article id="hard-skills">
+					<h2>Habilidades Técnicas</h2>
+					<ul>
+						<li>Apex</li>
+						<li>Padrões de Design Apex</li>
+						<li>SOQL</li>
+						<li>Flow</li>
+						<li>Componentes Lightning Web (LWC)</li>
+						<li>Visualforce (VF)</li>
+						<li>Service Cloud</li>
+						<li>Sales Cloud</li>
+						<li>Marketing Cloud</li>
+					</ul>
+				</article>
+				<article id="languages">
+					<h2>Idiomas</h2>
+					<ul>
+						<li>Português: Nativo</li>
+						<li>Inglês: Intermediário</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+		<footer class="bg-light py-1 d-flex justify-content-center align-items-center">
+			<p>Disponível para iniciar em 30 dias | Modelo de trabalho: remoto</p>
+		</footer>
+	</div>
+	<div class="language en">
+		<header>
+			<div class="container">
+				<div class="row d-flex px-0 align-items-center justify-content-center container">
+					<div class="col-6">
+						<h1>Ângelo Bernal Gomes França</h1>
+					</div>
+					<div class="col-6 contact-icons text-end">
+						<p>Brasília/DF <i class="fas fa-location-dot" aria-label="Location icon"></i></p>
+						<p><a href="tel:+5561991564133" aria-label="Phone">+55 61 99156-4133 <i class="fas fa-phone" aria-label="Phone icon"></i></a></p>
+						<p><a href="mailto:angelogomesfranca@gmail.com" aria-label="Email">angelogomesfranca@gmail.com <i class="fas fa-envelope" aria-label="Email icon"></i></a></p>
+						<p><a href="http://www.linkedin.com/in/angelo-bernal-gomes-franca-9a974a145/" aria-label="LinkedIn profile" target="_blank">linkedin.com/in/angelo-bernal-gomes-franca-9a974a145 <i class="fab fa-linkedin" aria-label="LinkedIn icon"></i></a></p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="container my-4">
+			<section id="section-summary" class="my-4">
+				<h2 class="d-none">Summary</h2>
+				<p>With over 3 years of experience in software development, I have contributed to complex projects, specializing in Salesforce technologies such as Apex, LWC, SOQL, and Flow. Seek to carry out tasks in the best and most organized way possible and with the most important purpose: solving problems.</p>
+			</section>
+			<section id="section-objetive" class="my-4">
+				<h2>Objective</h2>
+				<p>To work as a Salesforce Developer and make significant contributions to the organization's success, aligning with its strategic goals.</p>
+			</section>
+			<section id="section-experience" class="my-4">
+				<h2>Experience</h2>
+				<article class="my-4">
+					<h4>Analyst Salesforce Developer | Everymind</h4>
+					<p class="date">March 2025 – present</p>
+					<ul>
+						<li>Analyzing, architecting, and developing Salesforce solutions in an enterprise context, focusing
+							on digital transformation strategies, integration architecture, and legacy code refactoring.
+						</li>
+						<li>Estimating new projects, performing code reviews, providing training (BestMinds program), and
+							enhancing technical knowledge by applying design patterns and agile methodologies.</li>
+						<li>Developing new solutions and improving legacy code with advanced design patterns, modern
+							development practices, and critical thinking to optimize project lifecycles.</li>
+					</ul>
+					<span class="my-4">Technologies and skills used: Salesforce (SFDX, Apex, Triggers, Batchable, Queueable,
+						Platform Events, Flows, SOQL, LWC, Aura Components, SLDS), JavaScript (Web
+						Components), HTML, CSS, Jira, and Behavior Driven Development
+						(BDD).</span>
+				</article>
+				<article class="my-4">
+					<h4>Analyst Salesforce Developer | Multiedro</h4>
+					<p class="date">June 2023 – March 2025</p>
+					<ul>
+						<li>Analyzing, developing, reviewing code, and deploying Salesforce solutions in an enterprise
+							context with a focus on digital transformation strategies and integrations.</li>
+						<li>Improving legacy code and developing new solutions by applying design patterns and modern
+							development practices.</li>
+						<li>Studying and staying up to date with advanced technologies to enhance solution quality and
+							project efficiency.</li>
+					</ul>
+					<span class="my-4">Technologies and skills used: Salesforce (SFDX, Apex, SOQL, LWC, Aura, SLDS), JavaScript, HTML, CSS, Flow.</span>
+				</article>
+			</section>
+			<section id="section-education" class="my-4">
+				<h2>Education</h2>
+				<article class="my-4">
+					<h4>Faculdade UNICEUB | UNICEUB-DF</h4>
+					<h5>Graduation, System Analysis and Development - Incomplete</h5>
+				</article>
+				<h2>Certifications</h2>
+				<article class="my-4">
+					<h5>Salesforce Certified Platform Developer I</h5>
+					<h5>Salesforce Certified Associate</h5>
+					<h5>Scrum Foundation Professional Certificate SFPC</h5>
+				</article>
+			</section>
+			<section id="section-skills" class="my-4">
+				<h2 class="d-none">Skills</h2>
+				<article id="soft-skills">
+					<h2>Soft Skills</h2>
+					<ul>
+						<li>Communication</li>
+						<li>Leadership</li>
+						<li>Teamwork</li>
+						<li>Resilience</li>
+						<li>Proactivity</li>
+						<li>Organization</li>
+					</ul>
+				</article>
+				<article id="hard-skills">
+					<h2>Hard Skills</h2>
+					<ul>
+						<li>Apex</li>
+						<li>Apex Design Patterns</li>
+						<li>SOQL</li>
+						<li>Flow</li>
+						<li>Lightning Web Components (LWC)</li>
+						<li>Visualforce (VF)</li>
+						<li>Service Cloud</li>
+						<li>Sales Cloud</li>
+						<li>Marketing Cloud</li>
+					</ul>
+				</article>
+				<article id="languages">
+					<h2>Languages</h2>
+					<ul>
+						<li>Portuguese: Native</li>
+						<li>English: Intermediate</li>
+					</ul>
+				</article>
+			</section>
+		</main>
+		<footer class="bg-light py-1 d-flex justify-content-center align-items-center">
+			<p>Available to start in 30 days | Work model: remote</p>
+		</footer>
+	</div>
+    <script>
+		let isPortuguese = true;
+        function toggleLanguage() {
+            const button = document.querySelector('.toggle-button');
+			var lang;
+            if (isPortuguese) {
+                button.textContent = 'English';
+                button.style.backgroundColor = '#142242ff';
+                isPortuguese = false;
+				lang = 'pt';
+            } else {
+                button.textContent = 'Português';
+                button.style.backgroundColor = '#696d6eff';
+                isPortuguese = true;
+				lang = 'en';
+            }
+			document.querySelectorAll('.language').forEach(el => el.style.display = 'none');
+            document.querySelector(`.language.${lang}`).style.display = 'block';
+        }
+    </script>
 </body>
 </html>
